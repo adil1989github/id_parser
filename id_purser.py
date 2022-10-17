@@ -5,7 +5,9 @@ def sum_id(id_customer: str):
 def counter_customer_start_0(n_customer: int):
     for i, j in dict_group.items():
         if len(j) == n_customer:
-            return i
+            for a in j:
+                if '01234' in a:
+                    return i
 
 
 def counter_customer(n_customer: int, n_first_id: str):
